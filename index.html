@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="brankobozo" />
+    <meta
+      name="description"
+      content="Order summary card component - Frontend Mentor challenge"
+    />
+    <meta
+      name="keywords"
+      content="card, order card, summary card, card component"
+    />
+
+    <title>Order summary card component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body>
+    <main class="card">
+      <header class="card__header">
+        <img
+          src="images/illustration-hero.svg"
+          alt="Girl enjoying music"
+          class="card-hero"
+        />
+      </header>
+
+      <div class="card__body">
+        <h1>Order Summary</h1>
+        <p>
+          You can now listen to millions of songs, audiobooks, and podcasts on
+          any device anywhere you like!
+        </p>
+
+        <section class="card__plan">
+          <img src="images/icon-music.svg" alt="Music icon" />
+          <div class="card__price">
+            <p>Annual Plan</p>
+            <p>$59.99/year</p>
+          </div>
+          <a href="#">Change</a>
+        </section>
+
+        <div class="card__action">
+          <a href="#" class="card__btn card__btn--submit">Proceed to Payment</a>
+          <a href="#" class="card__btn card__btn--cancel">Cancel Order</a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">brankobozo</a>.
+    </footer>
+  </body>
+</html>

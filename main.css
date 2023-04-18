@@ -1,0 +1,159 @@
+/*
+
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Font
+
+- Family: [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display)
+- Weights: 500, 700, 900
+
+*/
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-p-blue: hsl(225, 100%, 98%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --des-blue: hsl(224, 23%, 55%);
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  background-color: var(--pale-blue);
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+  line-height: 1.5;
+}
+.card {
+  max-width: 375px;
+  margin: 0 auto;
+  text-align: center;
+}
+.card__header {
+  line-height: 0;
+}
+.card__body {
+  padding: 1em 2em;
+  background-color: #fff;
+  border-bottom-left-radius: 1.5em;
+  border-bottom-right-radius: 1.5em;
+}
+.card__body h1 {
+  font-weight: 900;
+  font-size: 1.5em;
+}
+.card__body p {
+  color: var(--des-blue);
+}
+.card-hero {
+  border-top-left-radius: 1.5em;
+  border-top-right-radius: 1.5em;
+  max-width: 100%;
+}
+.card__plan {
+  background-color: var(--very-p-blue);
+  border-radius: 0.5em;
+  padding: 1em 0.75em;
+  display: flex;
+  align-items: center;
+}
+.card__plan img {
+  background-color: var(--p-blue);
+  margin-inline-end: 1em;
+}
+.card__price p {
+  margin: 0;
+}
+.card__price p:first-child {
+  font-weight: 900;
+  color: #000;
+}
+.card__plan a {
+  margin-left: auto;
+}
+.card__plan a:hover {
+  text-decoration: none;
+  opacity: 0.6;
+}
+.card__btn {
+  display: block;
+  margin-block-start: 1.5em;
+  padding: 1em;
+  border-radius: 0.75em;
+  background-color: var(--bright-blue);
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+.card__btn--submit {
+  box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 0.45);
+}
+.card__btn--submit:hover {
+  opacity: 0.6;
+}
+.card__btn--cancel {
+  background: none;
+  color: var(--des-blue);
+}
+
+.card__btn--cancel:hover {
+  color: #000;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-block-start: 2em;
+}
+.attribution a {
+  color: hsl(--dark-blue);
+}
+
+@media (min-width: 1440px) {
+  .card {
+    max-width: 450px;
+  }
+  .card__body {
+    padding: 2em 3em;
+  }
+  .card__plan {
+    padding: 1.5em;
+  }
+}
